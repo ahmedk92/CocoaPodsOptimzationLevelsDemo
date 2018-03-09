@@ -21,7 +21,7 @@ target 'OptimizationLevels' do
           if targetsToOptimizeAtDebug.include? target.name
               target.build_configurations.each do |config|
                   if config.name == "Debug"
-                      config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Owholemodule'
+                      #config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Owholemodule'
                   end
               end
           end
